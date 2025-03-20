@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Game v1.0 - Web Edition</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+        canvas {
+            border: 1px solid #fff;
+        }
+        #controls {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 15px;
+            font-size: 18px;
+            background-color: #ccc;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            touch-action: manipulation;
+        }
+        button:active {
+            background-color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <div id="controls">
+        <div>
+            <button id="leftBtn">←</button>
+            <button id="rightBtn">→</button>
+        </div>
+        <div>
+            <button id="jumpBtn">J</button>
+            <button id="dodgeBtn">D</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
